@@ -8,7 +8,7 @@ IntegrationObject.call = function (json) {
 
 IntegrationObject.reverseCall = function (json) {
     var d = document.createElement('div');
-    d.innerHTML = '<div>' + JSON.stringify(json + '</div>';
+    d.innerHTML = '<div>' + JSON.stringify(json) + '</div>';
     document.getElementById('log').appendChild(d);
 }
 
