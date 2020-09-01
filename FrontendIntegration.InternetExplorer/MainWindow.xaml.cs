@@ -10,6 +10,7 @@ namespace FrontendIntegration.InternetExplorer
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly string _url = "https://inthemiddleofthenight.github.io/FrontendIntegration/FrontendIntegration.Server/ie.html";
         private readonly WebBrowser _webBrowser = new WebBrowser()
         {
             VerticalAlignment = VerticalAlignment.Stretch,
@@ -22,9 +23,8 @@ namespace FrontendIntegration.InternetExplorer
             InitializeComponent();
             Container.Children.Add(_webBrowser);
 
-            _webBrowser.Navigate("https://google.com");
             _webBrowser.ObjectForScripting = _integrationInterface;
-            _webBrowser.Navigate("https://localhost:44328/ie.html");
+            _webBrowser.Navigate(_url);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

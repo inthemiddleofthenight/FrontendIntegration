@@ -11,6 +11,7 @@ namespace FrontendIntegration.Chrome
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly string _url = "https://inthemiddleofthenight.github.io/FrontendIntegration/FrontendIntegration.Server/chrome.html";
         private readonly ChromiumWebBrowser _webBrowser = new ChromiumWebBrowser()
         {
             VerticalAlignment = VerticalAlignment.Stretch,
@@ -33,7 +34,7 @@ namespace FrontendIntegration.Chrome
         {
             if (_webBrowser.IsInitialized && !_webBrowser.IsDisposed)
             {
-                _webBrowser.Load("https://localhost:44328/chrome.html");
+                _webBrowser.Load(_url);
                 _webBrowser.ShowDevTools();
             }
         }
