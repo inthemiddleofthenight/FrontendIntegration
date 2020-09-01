@@ -11,7 +11,7 @@ namespace FrontendIntegration.Edge
    
     public partial class MainWindow : Window
     {
-        private readonly string _url = "https://inthemiddleofthenight.github.io/FrontendIntegration/FrontendIntegration.Server/edge.html";
+        private readonly string _url = "https://inthemiddleofthenight.github.io/FrontendIntegration/FrontendIntegration.Server/edgechromium.html";
         private readonly WebView _webBrowser = new WebView()
         {
             VerticalAlignment = VerticalAlignment.Stretch,
