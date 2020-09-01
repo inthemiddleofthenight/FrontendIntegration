@@ -18,6 +18,10 @@
 			<span>Edge Integration</span>
 		</li>
 		<li>
+			<a href="FrontendIntegration.Server/edgechromium.html">https://inthemiddleofthenight.github.io/FrontendIntegration/FrontendIntegration.Server/edgechromium.html</a>
+			<span>Edge Chromium Integration</span>
+		</li>
+		<li>
 			<a href="FrontendIntegration.Server/ie.html">https://inthemiddleofthenight.github.io/FrontendIntegration/FrontendIntegration.Server/ie.html</a>
 			<span>IE Integration</span>
 		</li>
