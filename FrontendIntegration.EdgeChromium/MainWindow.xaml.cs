@@ -31,11 +31,12 @@ namespace FrontendIntegration.EdgeChromium
 
         private void _webBrowser_CoreWebView2Ready(object sender, EventArgs e)
         {
-            _webBrowser.CoreWebView2.AddHostObjectToScript("EChromium", _integrationInterface);
+
         }
 
         private void _webBrowser_WebMessageReceived(object sender, Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs e)
         {
+            _webBrowser.CoreWebView2.AddHostObjectToScript("integrationInterface", _integrationInterface);
             MessageBox.Show($"Invoke from Edge Chromium frontend {e.WebMessageAsJson}");
         }
 
