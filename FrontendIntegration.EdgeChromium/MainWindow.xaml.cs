@@ -25,18 +25,17 @@ namespace FrontendIntegration.EdgeChromium
             Container.Children.Add(_webBrowser);
 
             _webBrowser.WebMessageReceived += _webBrowser_WebMessageReceived;
-           // _webBrowser.CoreWebView2Ready += _webBrowser_CoreWebView2Ready;
+            _webBrowser.CoreWebView2Ready += _webBrowser_CoreWebView2Ready;
             _webBrowser.Source = new System.Uri(_url);
         }
 
         private void _webBrowser_CoreWebView2Ready(object sender, EventArgs e)
         {
-
+            _webBrowser.CoreWebView2.AddHostObjectToScript("integrationInterface", _integrationInterface);
         }
 
         private void _webBrowser_WebMessageReceived(object sender, Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs e)
         {
-            _webBrowser.CoreWebView2.AddHostObjectToScript("integrationInterface", _integrationInterface);
             MessageBox.Show($"Invoke from Edge Chromium frontend {e.WebMessageAsJson}");
         }
 

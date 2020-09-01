@@ -29,7 +29,7 @@ document.getElementById('invoke').addEventListener('click', function () {
     }));
 })
 
-document.getElementById('invoke2').addEventListener('click', function () {
+document.getElementById('invoke2').addEventListener('click', async function () {
     await IntegrationObject.call2(JSON.stringify({
         dt: new Date(),
         str: 'test - 2',
