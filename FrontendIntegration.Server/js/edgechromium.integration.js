@@ -7,7 +7,7 @@ IntegrationObject.call = function (json) {
 }
 
 IntegrationObject.call2 = async function (json) {
-    await chrome.webview.hostObjects.integrationInterface.call(json);
+    await chrome.webview.hostObjects.integrationInterface.Call(json);
 }
 
 IntegrationObject.reverseCall = function (json) {

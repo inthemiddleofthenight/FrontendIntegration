@@ -7,7 +7,7 @@ namespace FrontendIntegration.EdgeChromium
     [ComVisible(true)]
     public class IntegrationInterface
     {
-        public void call(string json)
+        public void Call(string json)
         {
             MessageBox.Show($"Invoke from Edge Chromium frontend {json}");
         }
