@@ -68,9 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="chrome.html" />
+    <Content Include="edgechromium.html" />
     <Content Include="edge.html" />
     <Content Include="ie.html" />
     <Content Include="js\chrome.integration.js" />
+    <Content Include="js\edgechromium.integration.js" />
     <Content Include="js\ie.integration.js" />
     <Content Include="js\edge.integration.js" />
     <Content Include="Web.config" />
