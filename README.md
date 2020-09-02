@@ -18,12 +18,12 @@ Binding opbject .NET to js
  Invoke script from .NET in js
  ```csharp
  await _webBrowser.EvaluateScriptAsync("reverseCall", new JavaScriptSerializer().Serialize(new
-            {
-                dt = DateTime.Now,
-                str = "test",
-                name = "chrome frontend integration",
-                type = "host-to-front"
-            }));
+{
+         dt = DateTime.Now,
+         str = "test",
+         name = "chrome frontend integration",
+         type = "host-to-front"
+ }));
  ```
  reverseCall - function in window object
  
